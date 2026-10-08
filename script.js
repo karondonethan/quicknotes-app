@@ -56,16 +56,4 @@ function addNote(text, category) {
     category: category,
     createdAt: new Date().toLocaleString(),
   });
-  render();
-}
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const text = input.value.trim();
-  if (text === "") return;
-  addNote(text, categorySelect.value);
-  input.value = "";
-  input.focus();
-});
-
-render();
+  render
